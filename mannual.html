@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>How to Use - Remove BG</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF4564",
+                        "primary-hover": "#e03452",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#121212",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1E1E1E",
+                        "text-light": "#1F2937",
+                        "text-dark": "#F3F4F6",
+                        "border-light": "#E5E7EB",
+                        "border-dark": "#374151",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans transition-colors duration-200 min-h-screen flex flex-col">
+    <header
+        class="fixed w-full top-0 z-50 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-border-light dark:border-border-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 hover:opacity-80 transition-opacity">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="material-icons-round text-white text-xl">auto_fix_high</span>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-text-light dark:text-text-dark">Remove BG</span>
+                </a>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="p-2 rounded-full text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                        id="theme-toggle">
+                        <span class="material-icons-round dark:hidden">dark_mode</span>
+                        <span class="material-icons-round hidden dark:block">light_mode</span>
+                    </button>
+                    <a class="text-sm font-medium hover:text-primary transition-colors hidden sm:block text-primary"
+                        href="mannual.html">How to use</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-16 flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">How to Use Remove BG</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400">Removing image backgrounds is just 3 clicks away.
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-center gap-8">
+                    <div
+                        class="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0 text-2xl font-bold">
+                        1</div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-3">Upload your image</h2>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Click the <strong>Upload Image</strong> button on the home page to select a file from your
+                            mobile device or PC. You can also simply <strong>drag and drop</strong> the image directly
+                            into the upload area if you are on a computer.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-center gap-8">
+                    <div
+                        class="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0 text-2xl font-bold">
+                        2</div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-3">Wait for AI Processing</h2>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Once uploaded, our highly-trained artificial intelligence takes over. It will automatically
+                            detect the subject of your photo, separating it from the background instantly. No manual
+                            clicking or lassoing required!
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-center gap-8">
+                    <div
+                        class="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0 text-2xl font-bold">
+                        3</div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-3">Download the Result</h2>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Preview the result. Once you are satisfied with the transparent background, click on
+                            <strong>Download</strong> to save the image directly to your device. You can then use it on
+                            websites, presentations, e-commerce stores, and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="index.html"
+                    class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                    <span class="material-icons-round">arrow_back</span>
+                    Go back and try it now
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white dark:bg-surface-dark border-t border-border-light dark:border-border-dark py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-gray-400 dark:text-gray-500">
+            <p>© 2023 Remove BG Inc. Fast, free, and accurate background removal powered by AI.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+        });
+    </script>
+</body>
+
+</html>
