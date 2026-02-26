@@ -475,7 +475,8 @@
 
             try {
                 // Send to local Python Server
-                const response = await fetch('https://bg-remover-api-ybl9.onrender.com/remove-bg/', {
+                // Copy and paste this exact block to replace your current fetch
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://ankit-fr-bg-remover-api.hf.space"}/remove-bg/`, {
                     method: 'POST',
                     body: formData
                 });
